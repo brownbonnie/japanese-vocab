@@ -14,4 +14,8 @@ lazy val root = (project in file("."))
       "-deprecation",
       "-Xfatal-warnings"
     )
+
+      libraryDependencies ++= Seq(
+      jdbc
+      )
   )

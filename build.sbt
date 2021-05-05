@@ -7,15 +7,13 @@ lazy val root = (project in file("."))
     scalaVersion := "2.13.5",
     libraryDependencies ++= Seq(
       guice,
-      "org.scalatestplus.play" %% "scalatestplus-play" % "5.0.0" % Test
+      "org.scalatestplus.play" %% "scalatestplus-play" % "5.0.0" % Test,
+      jdbc,
+      "mysql" % "mysql-connector-java" % "5.1.41"
     ),
     scalacOptions ++= Seq(
       "-feature",
       "-deprecation",
       "-Xfatal-warnings"
     )
-
-      libraryDependencies ++= Seq(
-      jdbc
-      )
   )
